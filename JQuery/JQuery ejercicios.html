@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            //estructura base $('').accion(function() {});
+            //funcion click
+            $('#boton1').click(function() {
+                alert("esto es el evento click")
+            });
+            //funcion hide
+            $('#boton2').click(function() {
+                $('#parrafo1').hide();
+            });
+            //funcion show
+            $('#boton3').click(function() {
+                $('#parrafo1').show();
+            });
+            //funcion toggle
+            $('#boton4').click(function() {
+                $('#parrafo1').toggle();
+            });
+            //funcion sildeup
+            $('#boton5').click(function() {
+                $('#parrafo2').slideUp();
+            });
+            //funcion slidedown
+            $('#boton6').click(function() {
+                $('#parrafo2').slideDown();
+            });
+            //funcion slidetoggle
+            $('#boton7').click(function() {
+                $('#parrafo2').slideToggle();
+            });
+            //funcion fadeout
+            $('#boton8').click(function() {
+                $('#parrafo3').fadeOut(3000);
+            });
+            //funcion fadein
+            $('#boton9').click(function() {
+                $('#parrafo3').fadeIn(3000);
+            });
+            //funcion addclass
+            $('#boton10').click(function() {
+                $('#parrafo4').addClass("rojoygrande");
+            });
+            //funcion before
+            $('#boton11').click(function() {
+                $('#parrafo5').before("toc-toc");
+            });
+            //funcion after
+            $('#boton12').click(function() {
+                $('#parrafo5').after("tic-tac");
+            });
+            //funcion append
+            $('#boton13').click(function() {
+                $('#parrafo6').append("_parrafin");
+            });
+            //funcion html
+            $('#boton14').click(function() {
+                $('#parrafo7').html("reemplazo del parrafo anterior");
+            });
+            //funcion html
+            $('#boton14').click(function() {
+                $('#parrafo7').html("reemplazo del parrafo anterior");
+            });
+            //funcion attr
+            $('#boton15').click(function() {
+                $('#parrafo8').attr('style', 'color:red')
+            });
+            //funcion val
+            $('#boton16').click(function() {
+                $('#texto').val('se rellenó :V')
+            });
+            //funcion val
+            $('#boton17').click(function() {
+                $('#texto1').text('este texto es diferente')
+
+            });
+
+
+
+
+
+
+            //fin jquery
+        });
+    </script>
+    <style>
+        .rojoygrande {
+            color: crimson;
+            font-size: 48px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Funcion Click</h1>
+        <p>click en el boton para llamar al evento click</p>
+        <button id="boton1">funcion click</button>
+        <hr>
+        <h1>Funcion hide,show y toggle</h1>
+        <p id="parrafo1">click en el boton para ocultar el parrafo </p>
+        <button id="boton2">funcion hide</button>
+        <button id="boton3">funcion show</button>
+        <button id="boton4">funcion toggle</button>
+        <hr>
+        <h1>Funcion slideup</h1>
+        <p id="parrafo2">click en los botones para que este parrafo desaparezca y aparezca</p>
+        <button id="boton5">funcion slideup</button>
+        <button id="boton6">funcion slidedown</button>
+        <button id="boton7">funcion slidetoggle</button>
+        <hr>
+        <h1>Funcion fadein fadeout</h1>
+        <p id="parrafo3">click en los botones para que este parrafo se desvanezca y vuelva</p>
+        <button id="boton8">funcion fadedout</button>
+        <button id="boton9">funcion fadein</button>
+        <hr>
+        <h1>Funcion addclass</h1>
+        <p id="parrafo4">cambia este parrafo</p>
+        <button id="boton10">funcion addclass</button>
+        <hr>
+        <h1>Funcion before</h1>
+        <p id="parrafo5"> este es un parrafo</p>
+        <button id="boton11">funcion before</button>
+        <button id="boton12">funcion after</button>
+        <hr>
+        <h1>Funcion append</h1>
+        <p id="parrafo6"> este es un parrafo</p>
+        <button id="boton13">funcion appned</button>
+        <hr>
+        <h1>Funcion html</h1>
+        <p id="parrafo7"> este es un parrafo</p>
+        <button id="boton14">funcion html</button>
+        <hr>
+        <h1>Funcion attr</h1>
+        <p id="parrafo8"> este es un parrafo</p>
+        <button id="boton15">funcion attr</button>
+        <hr>
+        <h1>Funcion VAL</h1>
+        <input id="texto" type="text" name="text" id="text">
+        <button id="boton16">click rellenar el input</button>
+        <hr>
+        <h1>Funcion TEXT</h1>
+        <p id="texto1">este texto es el mismo de siempre</p>
+        <button id="boton17">click para cambiar el texto</button>
+        <hr>
+
+
+
+
+
+
+    </div>
+
+</body>
+
+</html>
